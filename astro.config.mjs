@@ -10,7 +10,7 @@ export default defineConfig({
         title: 'rTS Wiki',
         favicon: '/favicon.ico',
         logo: {
-            src: './src/assets/favicon.png',
+            src: './src/assets/favicon.webp',
         },
         components: {
             Header: './src/components/customHeader.astro',
@@ -107,6 +107,7 @@ export default defineConfig({
         ],
     },
     redirects: {
+        "/docs/[...slug].html": "/[...slug]",
         "/docs/[...slug]": "/[...slug]",
         "/rules": "/meta/rules",
         "/books/rules/page/rules-of-the-rtechsupport": "/meta/rules",
